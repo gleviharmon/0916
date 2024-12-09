@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Men's | Pursuit of Prestige</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Francois+One&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="G:\My Drive\Junior\Junior Fall\Systems Development\Pursuit of Prestige\Images\logo2.png" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            line-height: 1.6;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Cinzel', sans-serif;
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 75px;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-button {
+            position: absolute;
+            font-family: 'Red Hat Display', sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-button.left-1 {
+            left: 20%;
+        }
+
+        .nav-button.left-2 {
+            left: 30%;
+        }
+
+        .nav-button.right-1 {
+            right: 20%;
+        }
+
+        .nav-button.right-2 {
+            right: 30%;
+        }
+
+        .nav-button:hover {
+            border-bottom: solid 2px white;
+        }
+
+        .content {
+            background-image: url('https://media.gq.com/photos/57c4b3aeff4e739d495a57f8/master/pass/gucci-gq-0916-01-comp-v2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .scrollable-content {
+            height: 200vh;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .scrollable-content h2 {
+            margin-top: 50px;
+        }
+
+        .store-container {
+            display: flex;
+            padding: 50px;
+            background-color: #f8f8f8;
+        }
+
+
+        .filter-sidebar {
+            font-family: "Red Hat Display", sans-serif;
+            width: 250px;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            height: 100vh;
+        }
+
+        .filter-sidebar h3 {
+            margin-bottom: 20px;
+        }
+
+        .filter-sidebar ul {
+            list-style-type: none;
+        }
+
+        .filter-sidebar ul li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .filter-sidebar ul li:hover {
+            color: #084634;
+        }
+
+        /* Store Grid */
+        .store-grid {
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .store-item {
+            background-color: #fff;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .store-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .store-item:hover {
+            transform: scale(1.05);
+        }
+
+        .store-item p {
+            padding: 10px;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1rem;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        .store-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-header {
+            font-family: "Red Hat Display";
+            text-align: center;
+            font-size: 3rem;
+            padding: 5px;
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="shop.html" class="nav-button left-1">SHOP</a>
+        <a href="about.html" class="nav-button left-2">ABOUT</a>
+        
+        <a href="index.html" class="logo">
+            <img src="Images\logo2.png" alt="Logo">
+        </a>
+
+        <a href="contact.html" class="nav-button right-1">CONTACT</a>
+        <a href="login.html" class="nav-button right-2">LOGIN</a>
+    </header>
+
+    <div class="content">
+        <h1>Deals for him</h1>
+        <h2>Mens attire in all styles from your favorite brands</h2>
+    </div>
+
+
+    <div class="category-header"><b>MENS</b></div>
+    <div class="store-container">
+
+        <div class="filter-sidebar">
+            <h3>Filter By</h3>
+            <ul>
+                <li onclick="filterItems('all')">All Products</li>
+                <li onclick="filterItems('shirts')">Shirts</li>
+                <li onclick="filterItems('pants')">Pants</li>
+                <li onclick="filterItems('jackets')">Jackets</li>
+                <li onclick="filterItems('accessories')">Accessories</li>
+                <li onclick="filterItems('shoes')">Shoes</li>
+            </ul>
+        </div>
+
+
+        <div class="store-grid">
+
+            <div class="store-item" data-category="shoes">
+                <a href="product1.html">
+                    <img src="https://target.scene7.com/is/image/Target/GUEST_390f68ac-0d53-45a0-88aa-fdd83fc15ecb?qlt=65&fmt=pjpeg&hei=350&wid=350" alt="Product 1">
+                    <p>Men's Leo Oxford Dress Shoe<br><b>$175.99</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="shoes">
+                <a href="product2.html">
+                    <img src="https://www.allenedmonds.com/blob/product-images/39099/ec/45/00272/ec4500272_single_feed1000.jpg" alt="Product 2">
+                    <p>Oxford Factory Second Siena Cap Dress Shoe<br><b>$169.99</b></p>
+                </a>
+            </div>
+
+            <div class="store-item" data-category="shoes">
+                <a href="product3.html">
+                    <img src="https://media.kohlsimg.com/is/image/kohls/5155432_Cognac?wid=620&hei=620&op_sharpen=1" alt="Product 3">
+                    <p>Apt9 Denver Dress Shoe<br><b>$150.99</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="jackets">
+                <a href="product4.html">
+                    <img src="https://cms.brnstc.de/product_images/680x930_retina/cpro/media/images/product/23/8/100149145212000_5_1692175632424.jpg" alt="Product 4">
+                    <p>Gucci Linen Checkered Suit Jacket<br><b>$1509.49</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="jackets">
+                <a href="product4.html">
+                    <img src="https://media.gucci.com/style/White_South_0_160_316x316/1720544426/794825_Z8BTD_4032_001_100_0000_Light-Nylon-puffer-jacket.jpg" alt="Product 4">
+                    <p>Gucci Nylon Puffer Jacket<br><b>$3100.99</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="jackets">
+                <a href="product4.html">
+                    <img src="https://a.1stdibscdn.com/gucci-mens-large-black-diamante-velvet-formal-smoking-jacket-125g27-for-sale/v_24092/v_151943821648198908233/v_15194382_1648198908842_bg_processed.jpg" alt="Product 4">
+                    <p>Gucci Velvet Suit Jacket<br><b>$1800.95</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="accessories">
+                <a href="product4.html">
+                    <img src="https://media.gucci.com/style/White_South_0_160_540x540/1583147703/632119_I8600_9812_002_100_0000_Light.jpg" alt="Product 4">
+                    <p>G-Timeless Watch<br><b>$1650.49</b></p>
+                </a>
+            </div>
+            <div class="store-item" data-category="accessories">
+                <a href="product4.html">
+                    <img src="https://media.gucci.com/style/White_South_0_160_540x540/1441967432/404233_I86E0_8646_002_100_0000_Light.jpg" alt="Product 4">
+                    <p>Diamantissima watch<br><b>$1450.99</b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterItems(category) {
+            var items = document.querySelectorAll('.store-item');
+            
+            items.forEach(function(item) {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else if (item.getAttribute('data-category') !== category) {
+                    item.style.display = 'none';
+                } else {
+                    item.style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

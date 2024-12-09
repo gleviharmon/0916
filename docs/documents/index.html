@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pursuit of Prestige</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Francois+One&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="G:\My Drive\Junior\Junior Fall\Systems Development\Pursuit of Prestige\Images\logo2.png" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Cinzel', sans-serif;
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 75px;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-button {
+            position: absolute;
+            font-family: 'Red Hat Display', sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-button.left-1 {
+            left: 20%;
+        }
+
+        .nav-button.left-2 {
+            left: 30%;
+        }
+
+        .nav-button.right-1 {
+            right: 20%;
+        }
+
+        .nav-button.right-2 {
+            right: 30%;
+        }
+
+        .nav-button:hover {
+            border-bottom: solid 2px white;
+        }
+
+        .content {
+            background-image: url('https://americanaatbrand.com/wp-content/uploads/2023/08/AAB_Gucci-Blog_1920x1080_3-1536x864.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .scrollable-content {
+            height: auto;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-button {
+            width: 20%;
+            height: 40px;
+            padding: 50px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 2px dotted rgb(255, 255, 255);
+        }
+
+        .image-button:hover {
+            transform: scale(1.1);
+        }
+
+        .image-button .image-text {
+            font-family: "Red Hat Display", sans-serif;
+            position: absolute;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            z-index: 2;
+        }
+
+        .button-one {
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/18/17/04/fashion-942847_1280.jpg');
+        }
+
+        .button-two {
+            background-image: url('https://cdn.pixabay.com/photo/2018/12/12/19/21/christmas-3863380_1280.jpg');
+        }
+
+        .button-three {
+            background-image: url('https://cdn.pixabay.com/photo/2016/04/13/21/12/model-1323249_1280.jpg');
+        }
+
+        .button-four {
+            background-image: url('https://cdn.pixabay.com/photo/2016/02/19/10/44/fashion-1214269_1280.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="shop.html" class="nav-button left-1">SHOP</a>
+        <a href="about.html" class="nav-button left-2">ABOUT</a>
+        
+        <a href="index.html" class="logo">
+            <img src="Images\logo2.png" alt="Logo">
+        </a>
+
+        <a href="contact.html" class="nav-button right-1">CONTACT</a>
+        <a href="login.html" class="nav-button right-2">LOGIN</a>
+    </header>
+
+    <div class="content">
+        <h1>Smooth as Butter</h1>
+        <h2>Shop Christmas deals for the holiday season</h2>
+    </div>
+
+    <div class="scrollable-content">
+        <a href="shop-womens.html" class="image-button button-one">
+            <div class="image-text">WOMENS</div>
+        </a>
+        <a href="shop_womens.html" class="image-button button-two">
+            <div class="image-text">MENS</div>
+        </a>
+        <a href="login.html" class="image-button button-three">
+            <div class="image-text">LOGIN</div>
+        </a>
+        <a href="contact.html" class="image-button button-four">
+            <div class="image-text">CONTACT</div>
+        </a>
+    </div>
+
+</body>
+
+</html>

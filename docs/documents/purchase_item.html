@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pursuit of Prestige</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Francois+One&family=Nanum+Gothic+Coding:wght@400;700&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Images/logo2.png" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Cinzel', sans-serif;
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 75px;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-button {
+            position: absolute;
+            font-family: 'Red Hat Display', sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-button.left-1 {
+            left: 20%;
+        }
+
+        .nav-button.left-2 {
+            left: 30%;
+        }
+
+        .nav-button.right-1 {
+            right: 20%;
+        }
+
+        .nav-button.right-2 {
+            right: 30%;
+        }
+
+        .nav-button:hover {
+            border-bottom: solid 2px white;
+        }
+
+        .content {
+            background-image: url('https://americanaatbrand.com/wp-content/uploads/2023/08/AAB_Gucci-Blog_1920x1080_3-1536x864.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .product-section {
+            padding: 50px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-name {
+            font-family: 'Cinzel', sans-serif;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .product-price {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1rem;
+            margin: 20px 0;
+        }
+
+        .add-to-cart {
+            margin-top: 50px;
+            background-color: #000000;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #252525;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="shop.html" class="nav-button left-1">SHOP</a>
+        <a href="about.html" class="nav-button left-2">ABOUT</a>
+        
+        <a href="index.html" class="logo">
+            <img src="Images/logo2.png" alt="Logo">
+        </a>
+
+        <a href="contact.html" class="nav-button right-1">CONTACT</a>
+        <a href="login.html" class="nav-button right-2">LOGIN</a>
+    </header>
+
+    <div class="product-section">
+        <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-archlight-slingback-pump---AO5E1ISL02_PM2_Front%20view.jpg" alt="Product Image" class="product-image">
+        <div class="product-name">Louis Vitton Archlight Slingback Pump</div>
+        <div class="product-price">$1840.99</div>
+        <div class="product-description">
+            What a shoe! Buy it right now.
+        </div>
+        <a href="" class="add-to-cart">Add to Cart</a>
+    </div>
+
+</body>
+
+</html>
